@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Bellefair|Bitter" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Bellefair|Bitter|Dosiss" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -25,7 +25,7 @@
       color: #006BB6;
       font-weight: 600;
       margin-bottom: 30px;
-      image size: 80px;
+			image size: 80px;
   }
   h4 {
       font-size: 19px;
@@ -58,10 +58,13 @@
   .logo-small {
       color: #f4511e;
       font-size: 50px;
+			font-family: Times New Roman;
   }
   .logo {
       color: #f4511e;
       font-size: 200px;
+			font-family: 'Dosis', sans-serif;
+			
   }
   .thumbnail {
       padding: 0 0 15px 0;
@@ -195,22 +198,6 @@
         width: 100%;
         margin-bottom: 35px;
     }
-    h2 {
-	    font-size: 20px;
-	  }
-  .container-fluid {
-      padding: 20px 5px;
-  }
-   .col-sm-8 img {
-      height: 150px;
-      max-width: 350px;
-	  } 
-   .row {
-	   padding: 0px;
-	   margin: 0px;
-	   border: 0px;
-	  }
-   
   }
   @media screen and (max-width: 480px) {
     .logo {
@@ -248,10 +235,6 @@
   <p>The Garden of Dreams</p> 
   <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
     </div>
   </form>
 </div>
@@ -263,8 +246,12 @@
       <h2>KNICKS HISTORY</h2>
 
       <p>The New York Knicks are one of the most popular teams in the National Basketball Association (NBA). They play at the worlds' most famous arena Madison Square Gardens (MSG). The Knicks are a team with a history of a lot of great legends/ Hall of Famers such as Walt Clyde Frazier. ALthough, they are not the greatest in terms of winning games, they can certainlly still use you, the fans' help. So, join us today at Madison Square Gardens!</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
+		<button>Like</button>
+		 </article>
+		 <script>$("button").on("click", function() { 
+		   alert("clicked!") });
+		 </script>
     <div class="col-sm-4">
       <img src="http://s3.amazonaws.com/movoli/posts/085086f7-d95d-4f22-a712-0e286767b89d/media/user_enlarged.jpg" width="200px" border-radius="200px" font-color="#FF8000">
     </div>
@@ -280,7 +267,7 @@
       <h2>Ticket Plans</h2><br>
       <h4><strong>MISSION:</strong> </h4><br>
       <p><strong>VISION:</strong>You can see our ticket plans at Knicks.com, please make sure you buy tickets to a Knicks game this season.</p>
-      <img src="https://io.cnn.net/nba/nba/.element/media/2.0/teamsites/knicks/media/2016-17/img/knicks-group-sales.jpg" max-width="350px">
+			<img src="https://io.cnn.net/nba/nba/.element/media/2.0/teamsites/knicks/media/2016-17/img/knicks-group-sales.jpg">
     </div>
   </div>
 </div>
@@ -408,9 +395,9 @@
 
 	<h2>Contact Us</h2>
 	<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
-	<input name="skip_WhereToSend" type="hidden" value="Karirmandeep@gmail.com" />
+	<input name="skip_WhereToSend" type="hidden" value="your@email.com" />
 	<input name="skip_SnapHostID" type="hidden" value="UJDPFAQBE2EU" />
-	<input name="skip_WhereToReturn" type="hidden" value="http://www.mandeep000.github.io/ThankYouPage.htm" />
+	<input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
 	<input name="skip_Subject" type="hidden" value="Contact Us Form" />
 	<input name="skip_ShowUsersIp" type="hidden" value="1" />
 	<input name="skip_SendCopyToUser" type="hidden" value="1" />
@@ -432,19 +419,19 @@
 	obj.src = src + '&rad=' + date.getTime();
 	return false; }
 	</script>
-	<table border="0" cellpadding="0" cellspacing="0" max-width="600">
+	<table border="0" cellpadding="5" cellspacing="0" width="600">
 	<tr>
 	<td><b>Name*:</b></td>
-	<td><input name="Name" type="text" maxlength="60" style="max-width:350px;" /></td>
+	<td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
 	</tr><tr>
 	<td><b>Phone number:</b></td>
-	<td><input name="PhoneNumber" type="text" maxlength="43" style="max-width:350px;" /></td>
+	<td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
 	</tr><tr>
 	<td><b>Email address*:</b></td>
-	<td><input name="FromEmailAddress" type="text" maxlength="60" style="max-width:350px;" /></td>
+	<td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
 	</tr><tr>
 	<td><b>Comments and questions*:</b></td>
-	<td><textarea name="Comments" rows="7" cols="25" style="max-width:350px;"></textarea></td>
+	<td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
 	</tr><tr>
 	<td colspan="2" align="center"> <br />
 	<table border="0" cellpadding="0" cellspacing="0">
@@ -531,6 +518,10 @@ $(document).ready(function(){
   });
 })
 </script>
-
+<button>Like</button>
+ </article>
+ <script>$("button").on("click", function() { 
+   alert("clicked!") });
+ </script> 
 </body>
 </html>
